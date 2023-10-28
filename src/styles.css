@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+}
+
+@supports (display: inline-block) {
+    body {
+        color: red;
+    }
+}
